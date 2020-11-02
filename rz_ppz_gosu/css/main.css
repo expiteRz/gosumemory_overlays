@@ -9,52 +9,65 @@
 body {
   font-family: "Roboto", sans-serif;
   /* color: white; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .box {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
   padding: 16px;
   background-color: #222;
   display: flex;
   margin: 18px;
   border-radius: 8px;
   box-shadow: 0px 0px 16px black;
-  width: 320px;
+  width: 340px;
+  height: 38px;
 }
 
 .pp {
   font-size: 32px;
   color: whitesmoke;
-  filter: drop-shadow(0px 2px 0px darkgrey);
-  justify-content: space-around;
+  filter: drop-shadow(0px 2px 0px #777);
+  margin-left: 4px;
 }
 
 .hits {
-  background-color: whitesmoke;
+  background-color: #333;
   border-radius: 6px;
   margin: 0 0 0 auto;
   position: relative;
   display: flex;
-  box-shadow: 0px 0px 8px black;
-  width: 60%;
+  box-shadow: 0px 0px 4px black inset;
+  width: 65%;
   font-size: 20px;
   justify-content: space-around;
+  color: whitesmoke;
 }
 
 #h100 {
-  color: green;
-  text-shadow: 0px 0px 8px green;
+  text-shadow: -1px 0px 8px green, 1px 0px 8px green;
+  filter: drop-shadow(0px 1px 0px #777);
 }
 
 #h50 {
-  color: darkgoldenrod;
-  text-shadow: 0px 0px 8px darkgoldenrod;
+  text-shadow: -1px 0px 8px darkgoldenrod, 1px 0px 8px darkgoldenrod;
+  filter: drop-shadow(0px 1px 0px #777);
 }
 
 #h0 {
-  color: darkred;
-  text-shadow: 0px 0px 8px darkred;
+  text-shadow: -1px 0px 8px darkred, 1px 0px 8px darkred;
+  filter: drop-shadow(0px 1px 0px #777);
+}
+
+#sb {
+  text-shadow: -1px -1px 8px black, 1px -1px 8px black, -1px 1px 8px black, 1px 1px 8px black;
+  filter: drop-shadow(0px 1px 0px #777);
 }
 
 .margin{
-  margin-top: 3.5%;
+  margin-top: auto;
+  margin-bottom: auto;
 }

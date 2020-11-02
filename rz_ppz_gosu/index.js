@@ -13,6 +13,9 @@ let pp = new CountUp('pp', 0, 0, 0, .5, { useEasing: true, useGrouping: true, se
 let h100 = new CountUp('h100', 0, 0, 0, .5, { useEasing: true, useGrouping: true, separator: " ", decimal: "." })
 let h50 = new CountUp('h50', 0, 0, 0, .5, { useEasing: true, useGrouping: true, separator: " ", decimal: "." })
 let h0 = new CountUp('h0', 0, 0, 0, .5, { useEasing: true, useGrouping: true, separator: " ", decimal: "." })
+let sb = new CountUp('sb', 0, 0, 0, .5, { useEasing: true, useGrouping: true, separator: " ", decimal: "." })
+
+let box = document.getElementByClass("box");
 
 socket.onmessage = event => {
   try {
@@ -21,5 +24,6 @@ socket.onmessage = event => {
     h100.update(play.hits[100]);
     h50.update(play.hits[50]);
     h0.update(play.hits[0]);
+    sb.update(playhgits[sliderBreak]);
   } catch (err) { console.log(err); };
 };
