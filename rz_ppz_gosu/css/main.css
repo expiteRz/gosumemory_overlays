@@ -22,7 +22,7 @@ body {
   display: flex;
   margin: 18px;
   border-radius: 8px;
-  box-shadow: 0px 0px 16px black;
+  box-shadow: 0px 0px 16px black, 0px 0px 4px black inset;
   width: 340px;
   height: 38px;
 }
@@ -48,23 +48,23 @@ body {
 }
 
 #h100 {
-  text-shadow: -1px 0px 8px green, 1px 0px 8px green;
   filter: drop-shadow(0px 1px 0px #777);
+  text-shadow: -1px 0px 8px green, 1px 0px 8px green;
 }
 
 #h50 {
-  text-shadow: -1px 0px 8px darkgoldenrod, 1px 0px 8px darkgoldenrod;
   filter: drop-shadow(0px 1px 0px #777);
+  text-shadow: -1px 0px 8px darkgoldenrod, 1px 0px 8px darkgoldenrod;
 }
 
 #h0 {
-  text-shadow: -1px 0px 8px darkred, 1px 0px 8px darkred;
   filter: drop-shadow(0px 1px 0px #777);
+  text-shadow: -1px 0px 8px darkred, 1px 0px 8px darkred;
 }
 
 #sb {
-  text-shadow: -1px -1px 8px black, 1px -1px 8px black, -1px 1px 8px black, 1px 1px 8px black;
   filter: drop-shadow(0px 1px 0px #777);
+  text-shadow: -1px -1px 8px black, 1px -1px 8px black, -1px 1px 8px black, 1px 1px 8px black;
 }
 
 .margin{
